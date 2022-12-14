@@ -47,14 +47,23 @@ src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
 stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
+      
 <script>
     var max_econ, max_dipl, max_govt, max_scty; // Max possible scores
     max_econ = max_dipl = max_govt = max_scty = 0;
-    let econ_array = new Array(questions.length);
-    let dipl_array = new Array(questions.length);
-    let govt_array = new Array(questions.length);
-    let scty_array = new Array(questions.length);
-    var qn = 0; // Question number
+    let local_global_array = new Array(questions.length); /* Local Autonomy vs. Global Integration */
+    let ethcommunity_array = new Array(questions.length); /* Minimal Ethical Community vs. Universal Ethical Community */
+    let hierhetarchy_array = new Array(questions.length); /* Vertical Hierarchy vs. Horizontal Heterarchy */
+    let instru_deont_array = new Array(questions.length); /* Instrumentalism vs. Deontology */
+    let selfbirthess_array = new Array(questions.length); /* Self-Creation vs. Birth-Essence */    
+    let ecolo_indust_array = new Array(questions.length); /* Deep Ecology vs. Industrialism */
+    let might_solida_array = new Array(questions.length); /* Might Makes Right vs. Solidarity */
+    let paternpartic_array = new Array(questions.length); /* Paternalism vs. Participation */
+    let homogeplural_array = new Array(questions.length); /* Homogeny vs. Pluralism */
+    let tradit_revol_array = new Array(questions.length); /* Tradition vs. Revolution */
+    let markets_plan_array = new Array(questions.length); /* Markets vs. Planning */
+    let theocr_secul_array = new Array(questions.length); /* Theocracy vs. Secularism */
+    var qn = 0; // Question 
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_econ += Math.abs(questions[i].effect.econ)
